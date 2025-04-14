@@ -1,6 +1,6 @@
 # Airbnb Web Application
 
-Owner: Pham Khanh Doan Tran - s3978798\
+Owner: Pham Khanh Doan Tran - s3978798
 
 This project is a web application for managing Airbnb-like listings using Node.js and Express, with MongoDB as the database.
 
