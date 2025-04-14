@@ -7,8 +7,8 @@ This project is a web application for managing Airbnb-like listings using Node.j
 
 ## Requirements
 
-- Node.js (version 14.x or higher recommended)\
-- MongoDB (version 3.6.0 or compatible)\
+- Node.js (version 14.x or higher recommended)
+- MongoDB (version 3.6.0 or compatible)
 
 
 ## Installation Instructions
