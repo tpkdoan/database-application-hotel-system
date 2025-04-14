@@ -1,0 +1,44 @@
+.property-link {
+    font-size: 25px; 
+    color: #0B192C; 
+    font-weight: 500;
+}
+
+.property-link:hover {
+    color: gray;
+}
+
+.listing {
+    background-color: #fff;
+}
+
+.logo {
+    color: black;
+    font-weight:600;
+    font-size: x-large;
+}
+
+.nav-link {
+    color: black;
+    font-weight: lighter;
+}
+
+.nav-link:hover {
+    color: gray
+}
+
+.active-page {
+    font-weight: 350;
+}
+
+.btn {
+    background-color: #0B192C !important;
+}
+
+.btn:hover {
+    background-color: black !important;
+}
+
+#booking-details {
+    text-align: start;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="/styles.css" />
+        <title>Booking Page</title>
+    </head>
+    <body>
+        <div class="container pb-5">
+            <header
+                class="d-flex flex-wrap justify-content-between py-3 mb-5 border-bottom"
+            >
+                <a
+                    href="/"
+                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+                >
+                    <span class="logo">MyAirBnB</span>
+                </a>
+
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link" aria-current="page"
+                            >Home</a
+                        >
+                    </li>
+                </ul>
+            </header>
+            <h1>Let's book the property</h1>
+            <div class="my-4">
+                <h4>Booking Details</h4>
+                <form id="bookingForm" action="/api/bookings" method="POST">
+                    <input
+                        type="hidden"
+                        name="listing_id"
+                        id="listing_id"
+                        value=""
+                    />
+
+                    <div class="form-group">
+                        <label for="arrival_date">Check In:</label>
+                        <input
+                            type="date"
+                            class="form-control"
+                            id="arrival_date"
+                            name="arrival_date"
+                            required
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="departure_date">Check Out:</label>
+                        <input
+                            type="date"
+                            class="form-control"
+                            id="departure_date"
+                            name="departure_date"
+                            required
+                        />
+                    </div>
+
+                    <h4 class="mt-4">Your Details</h4>
+
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            name="client[name]"
+                            placeholder="Please provide your name."
+                            required
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email_address">Email Address:</label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email_address"
+                            name="client[email_address]"
+                            placeholder="Please provide your email address."
+                            required
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mobile_phone">Your Mobile No:</label>
+                        <input
+                            type="tel"
+                            class="form-control"
+                            id="mobile_phone"
+                            name="client[mobile_phone]"
+                            placeholder="Please provide mobile no: (04xxxx xxx xxx)"
+                            required
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="postal_address">Postal Address:</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="postal_address"
+                            name="client[postal_address]"
+                            placeholder="Please provide your postal address."
+                            required
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="home_address">Residential Address:</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="home_address"
+                            name="client[home_address]"
+                            placeholder="Please provide your residential address. (cannot be a post box address)"
+                            required
+                        />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-3">
+                        Submit Booking
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <script src="/booking.js"></script>
+    </body>
+</html>
